@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breast  Application</title>
+</head>
+<body>
+    <h1>breast Django Application</h1>
+    <hr>
+    {% if result %}
+        <h1>what you're trying to classify is {{result}}</h1>
+    {% endif %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        Radius_mean : <input type="number" name="radius_mean" required><br>
+        Texture_mean : <input type="number" name="texture_mean" required><br>
+        Perimeter_mean : <input type="number" name="perimeter_mean" required><br>
+        Area_mean : <input type="number" name="area_mean" required><br>
+        Smoothness_mean : <input type="number" name="smoothness_mean" required><br>
+        Compactness_mean : <input type="number" name="compactness_mean" required><br>
+        Concavity_mean : <input type="number" name="concavity_mean" required><br>
+        Concavepoints_mean : <input type="number" name="concavepoints_mean" required><br>
+        Symmetry_mean : <input type="number" name="symmetry_mean" required><br>
+        Fractal_dimension_mean : <input type="number" name="Fractal_dimension_mean" required><br>
+        Radius_se : <input type="number" name="radius_se" required><br>
+        Texture_se : <input type="number" name="texture_se" required><br>
+        Perimeter_se : <input type="number" name="perimeter_se" required><br>
+        Area_se : <input type="number" name="area_se" required><br>
+        smoothness_se : <input type="number" name="smoothness_se" required><br>
+        Area_mean : <input type="number" name="area_mean" required><br>
+        compactness_se : <input type="number" name="compactness_se" required><br>
+        concavity_se : <input type="number" name="concavity_se" required><br>
+        concave points_se : <input type="number" name="concave points_se" required><br>
+        symmetry_se : <input type="number" name="symmetry_se" required><br>
+        fractal_dimension_se : <input type="number" name="fractal_dimension_se" required><br>
+        radius_worst : <input type="number" name="radius_worst" required><br>
+        texture_worst : <input type="number" name="texture_worst" required><br>
+        perimeter_worst : <input type="number" name="perimeter_worst" required><br>
+        area_worst : <input type="number" name="area_worst" required><br>
+        smoothness_worst : <input type="number" name="smoothness_worst" required><br>
+        compactness_worst : <input type="number" name="compactness_worst" required><br>
+        concavity_worst : <input type="number" name="concavity_worst" required><br>
+        symmetry_worst : <input type="number" name="symmetry_worst" required><br>
+        fractal_dimension_worst : <input type="number" name="fractal_dimension_worst" required><br>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>
